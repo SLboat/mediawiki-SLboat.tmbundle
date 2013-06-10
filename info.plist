@@ -36,41 +36,6 @@
 				<key>name</key>
 				<string>Format</string>
 			</dict>
-			<key>F8E691BD-3B5E-40C9-B306-E5907633EB29</key>
-			<dict>
-				<key>items</key>
-				<array>
-					<string>3A705702-B6CA-4EC8-9DD9-CD5A1C1C819E</string>
-					<string>14B77304-879C-4479-99AF-214D3222ECCC</string>
-					<string>C15A6AF0-E218-4891-82C3-F0B2BB2FB773</string>
-					<string>C77B0111-D741-40E8-BC04-160C6277FE5D</string>
-					<string>184223B3-EBEF-4172-B7A8-EA53FEDE2996</string>
-				</array>
-				<key>name</key>
-				<string>Headings</string>
-			</dict>
-			<key>ACE12738-B468-4090-BB0E-5725D37562FC</key>
-			<dict>
-				<key>items</key>
-				<array>
-					<string>BB36CDF4-4D40-449A-B1DA-7813798DA3B8</string>
-					<string>6BFE350B-6616-48A1-96DE-7986D7779E11</string>
-					<string>0BDA6124-1DAE-49FA-875A-ED5DEC6639D2</string>
-				</array>
-				<key>name</key>
-				<string>Lists</string>
-			</dict>
-			<key>BFB42080-B1C4-439F-B8CC-CB4859C819F0</key>
-			<dict>
-				<key>items</key>
-				<array>
-					<string>C1BCD487-9A96-48FB-BA13-508A34A02094</string>
-					<string>08B81017-93C6-45D3-A3FD-A9143E6C32B0</string>
-					<string>9A70379A-6602-4FA1-BF92-6E8379CC5B91</string>
-				</array>
-				<key>name</key>
-				<string>Links</string>
-			</dict>
 			<key>25A5AD36-CEF3-4BCA-9ACB-4E69F8474F45</key>
 			<dict>
 				<key>items</key>
@@ -93,7 +58,7 @@
 					<string>054F815A-0764-4398-B227-57463918E43A</string>
 					<string>FC973614-A03B-43EE-8F59-64C9E7122358</string>
 					<string>DADDBEEB-4411-4561-B091-1019382BFAB9</string>
-					<string>F36B4588-8104-4A78-8821-188468DB406D</string>					
+					<string>F36B4588-8104-4A78-8821-188468DB406D</string>
 					<string>------------------------------------</string>
 					<string>4D701709-0454-4A0A-9FB7-8D8D48C5A94D</string>
 					<string>------------------------------------</string>
@@ -102,6 +67,17 @@
 				</array>
 				<key>name</key>
 				<string>References</string>
+			</dict>
+			<key>ACE12738-B468-4090-BB0E-5725D37562FC</key>
+			<dict>
+				<key>items</key>
+				<array>
+					<string>BB36CDF4-4D40-449A-B1DA-7813798DA3B8</string>
+					<string>6BFE350B-6616-48A1-96DE-7986D7779E11</string>
+					<string>0BDA6124-1DAE-49FA-875A-ED5DEC6639D2</string>
+				</array>
+				<key>name</key>
+				<string>Lists</string>
 			</dict>
 			<key>BC429D06-7D1B-4C92-B0D2-AAF922E3868C</key>
 			<dict>
@@ -116,10 +92,34 @@
 				<key>name</key>
 				<string>Document Structure</string>
 			</dict>
+			<key>BFB42080-B1C4-439F-B8CC-CB4859C819F0</key>
+			<dict>
+				<key>items</key>
+				<array>
+					<string>C1BCD487-9A96-48FB-BA13-508A34A02094</string>
+					<string>08B81017-93C6-45D3-A3FD-A9143E6C32B0</string>
+					<string>9A70379A-6602-4FA1-BF92-6E8379CC5B91</string>
+				</array>
+				<key>name</key>
+				<string>Links</string>
+			</dict>
+			<key>F8E691BD-3B5E-40C9-B306-E5907633EB29</key>
+			<dict>
+				<key>items</key>
+				<array>
+					<string>3A705702-B6CA-4EC8-9DD9-CD5A1C1C819E</string>
+					<string>14B77304-879C-4479-99AF-214D3222ECCC</string>
+					<string>C15A6AF0-E218-4891-82C3-F0B2BB2FB773</string>
+					<string>C77B0111-D741-40E8-BC04-160C6277FE5D</string>
+					<string>184223B3-EBEF-4172-B7A8-EA53FEDE2996</string>
+				</array>
+				<key>name</key>
+				<string>Headings</string>
+			</dict>
 		</dict>
 	</dict>
 	<key>name</key>
-	<string>Mediawiki</string>
+	<string>Mediawiki-SLboat</string>
 	<key>uuid</key>
 	<string>64C4222F-7054-4A26-B91E-A82F53166142</string>
 </dict>
