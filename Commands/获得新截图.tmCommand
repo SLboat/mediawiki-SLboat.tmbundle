@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env bash
+# todo: 这里的文件检测一团糟糕
+# 这里可以使用command+R来快速调试
+
+# 获取最后的文件
+LastFile=$(find ~/Desktop/ -type f -maxdepth 1 -name "*.png" -print0| xargs -0 ls -rt | tail -1| grep ".png")
+
+# 检查是否为png文件，这显然是个坏的方式
+if [ $? -gt 0 ];
+then
+echo $LastFile
+	# 终止退出
+	exit;
+fi
+# 输出最新的截图文件
+# todo，自动检查上一行是否空格
+echo -e ":[[文件:$LastFile]]\n"
+
+# 展示这个文件到html？
+
+# 移动到for boat目录
+cp "$LastFile" ~/Desktop/For\ Boat/</string>
+	<key>input</key>
+	<string>none</string>
+	<key>inputFormat</key>
+	<string>text</string>
+	<key>keyEquivalent</key>
+	<string>^e</string>
+	<key>name</key>
+	<string>获得新截图</string>
+	<key>outputCaret</key>
+	<string>afterOutput</string>
+	<key>outputFormat</key>
+	<string>text</string>
+	<key>outputLocation</key>
+	<string>afterInput</string>
+	<key>tabTrigger</key>
+	<string>png</string>
+	<key>uuid</key>
+	<string>77C3F7F1-F4A0-4C45-99D5-E9483051FCD5</string>
+	<key>version</key>
+	<integer>2</integer>
+</dict>
+</plist>
