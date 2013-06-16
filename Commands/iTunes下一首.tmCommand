@@ -100,6 +100,8 @@ end getCurrentTrackName
 	<string>text</string>
 	<key>outputLocation</key>
 	<string>discard</string>
+	<key>tabTrigger</key>
+	<string>next</string>
 	<key>uuid</key>
 	<string>3964D9FD-89DE-4058-985B-EB5EC86C7660</string>
 	<key>version</key>
