@@ -21,7 +21,7 @@ echo $LastFile
 fi
 # 输出最新的截图文件
 # todo，自动检查上一行是否空格
-echo -e ":[[文件:$LastFile]]\n"
+echo -e ":[[文件:$(basename "$LastFile")]]\n"
 
 # 展示这个文件到html？
 

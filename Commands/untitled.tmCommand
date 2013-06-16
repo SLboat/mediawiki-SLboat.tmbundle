@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>command</key>
+	<string>#!/usr/bin/env 
+</string>
+	<key>name</key>
+	<string>untitled</string>
+	<key>uuid</key>
+	<string>3964D9FD-89DE-4058-985B-EB5EC86C7660</string>
+</dict>
+</plist>
