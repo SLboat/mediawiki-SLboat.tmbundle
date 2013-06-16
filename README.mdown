@@ -1,3 +1,6 @@
+# 我们所做的修改
+主要为航海见识音频优化，也就是控制iTunes如何播放音频
+
 # SLboat mod
 
 We use it for our mod,so it may broken some orgin function.
