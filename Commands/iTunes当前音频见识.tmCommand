@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>command</key>
+	<string>#! /usr/bin/osascript
+
+-- 森亮号 iTunes音频见识吸取苹果脚本-全局脚本版本
+-- 这里相比itunes版本多了些玩意，多了自动输出剪贴板内容
+-- 当前为了fastScripts而生！
+-- 早期主要为了spark而生！伟大的spark
+
+-- 告诉程序iTunes咯
+tell application "iTunes"
+	-- 试试获得路径,它的显示规则挺奇怪的
+	try
+		set theTrackPath to the location of current track
+	on error
+		tell application "iTunes"
+			display alert "看起来没有正在播放的文件，遗憾！"
+			-- 退出事件处理器
+			return false
+		end tell
+	end try
+	-- 转换成没有那么疯狂的格式
+	log "播放的路径是：" &amp; POSIX path of theTrackPath
+	-- 获得文件名子
+	set theTrackName to ((the name of current track))
+	if (theTrackName does not contain "_") then
+		tell application "iTunes"
+			display dialog "目标文件" &amp; theTrackName &amp; "不包含音频见识特质，不进行处理！" with icon caution buttons {"好的"}
+			-- 退出事件处理器
+			return false
+		end tell
+	end if
+end tell
+
+-- 评价几颗星，好了，星星乘以10
+RattingTrack(100)
+
+
+-- 合并文件名到wiki语法去
+set theTrackFile to "[[File:" &amp; theTrackName &amp; ".MP3]]"
+
+-- 重新进行格式化-加上换行等玩意
+set theTrackFile to "----
+" &amp; theTrackFile &amp; "
+* "
+
+-- 送到剪贴板里去
+set the clipboard to theTrackFile
+
+-- 粘贴处理咯
+-- 按粘贴按钮，系统事件真是能做太多事情了
+tell application "System Events"
+	-- 按下command+v
+	keystroke "v" using {command down}
+end tell
+
+-- 需要复制音频见识
+-- 复制到需要文件？
+tell application "Finder"
+	-- 复制文件
+	set Boat_Path to folder "For Boat" of folder "Desktop" of folder "sen" of folder "Users" of startup disk
+	-- todo: 检查文件存在就不再复制一次
+	try
+		-- 复制的时候直接覆盖掉
+		-- 复制不成功，带来偏执
+		duplicate file theTrackPath to Boat_Path replacing yes
+	on error
+		tell application "iTunes"
+			display dialog "尝试复制的时候发生错误，文件 [" &amp; (theTrackPath as string) &amp; "]无法复制到待上传目录。" with icon caution buttons {"唉"}
+			
+		end tell
+	end try
+end tell
+
+on RattingTrack(Rat)
+	-- 如果是真，那就会运行咯
+	set needRating to true
+	
+	tell application "iTunes"
+		if (needRating) then
+			-- 设置评分到Rat - 动态的哦
+			set the rating of current track to Rat
+		end if
+	end tell
+end RattingTrack
+</string>
+	<key>keyEquivalent</key>
+	<string>^m</string>
+	<key>name</key>
+	<string>iTunes当前音频见识</string>
+	<key>tabTrigger</key>
+	<string>music</string>
+	<key>uuid</key>
+	<string>362630A0-BCC9-459B-A9FB-D40933A457F8</string>
+</dict>
+</plist>
