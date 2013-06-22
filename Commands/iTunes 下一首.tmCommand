@@ -11,26 +11,21 @@
 
 -- 森亮号音频见识制造 - iTunes 强制到达下一首
 
--- 记下最后的重复模式，这个读取花费大量的效率呢
--- set last_Repeat to getRepeatType()
+-- 先暂停好了
+pause()
 
 -- 强制关闭重复模式-关闭
-setRepeatType("关闭")
-
--- 等待一会
-delay (0.1)
+waitfor_setRepeatType("关闭")
 
 -- 进入下一首，这时候看起来可以了
 nextSong()
 
--- 稍等一会
-delay (0.1)
-
 -- 强制恢复到单曲
-setRepeatType("单曲")
+if not waitfor_setRepeatType("单曲") then
+	return ("尝试下一首发生意外，真不幸！")
+end if
 
--- 还原到最后一次的重复模式-恢复
--- setRepeatType(last_Repeat)
+play()
 
 -- 提示工作完成了
 return ("已跳到下一个音频见识：" &amp; getCurrentTrackName())
@@ -79,12 +74,48 @@ on setRepeatType(repeatType) -- 重复模式是一个字符串: 关闭/全部/�
 	end ignoring
 end setRepeatType
 
+on waitfor_setRepeatType(repeatType)
+	-- 最大时间五秒
+	set max_wait_time to 3
+	set startTime to (get current date)
+	--最长等待五秒
+	-- 强制关闭重复模式-repeatType
+	repeat until (getRepeatType() = repeatType)
+		setRepeatType(repeatType)
+		delay (0.2)
+		--评测时间
+		set endTime to (get current date)
+		set duration to endTime - startTime
+		--检查时间
+		if duration &gt; max_wait_time then
+			--超时终止
+			exit repeat
+		end if
+	end repeat
+	--返回是否一致
+	return (getRepeatType() = repeatType)
+end waitfor_setRepeatType
+
+-- 暂停
+on pause()
+	tell application "iTunes"
+		pause
+	end tell
+end pause
+
 -- 去往下一首
 on nextSong()
 	tell application "iTunes"
 		next track
 	end tell
 end nextSong
+
+-- 播放
+on play()
+	tell application "iTunes"
+		play
+	end tell
+end play
 
 -- 获得当前曲目的名称
 on getCurrentTrackName()
