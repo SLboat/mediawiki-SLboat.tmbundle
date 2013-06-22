@@ -9,7 +9,7 @@
 	<key>keyEquivalent</key>
 	<string></string>
 	<key>name</key>
-	<string>Insert Row</string>
+	<string>插入行</string>
 	<key>scope</key>
 	<string>markup.other.table.row.mediawiki</string>
 	<key>tabTrigger</key>

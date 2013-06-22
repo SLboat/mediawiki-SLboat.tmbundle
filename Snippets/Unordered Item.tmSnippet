@@ -8,7 +8,7 @@
 	<key>keyEquivalent</key>
 	<string></string>
 	<key>name</key>
-	<string>Unordered Item</string>
+	<string>无序列表项目</string>
 	<key>scope</key>
 	<string>markup.list.unnumbered.mediawiki</string>
 	<key>tabTrigger</key>

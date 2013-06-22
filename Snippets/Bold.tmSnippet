@@ -7,7 +7,7 @@
 	<key>keyEquivalent</key>
 	<string>@b</string>
 	<key>name</key>
-	<string>Bold</string>
+	<string>加粗</string>
 	<key>scope</key>
 	<string>text.html.mediawiki</string>
 	<key>semanticClass</key>

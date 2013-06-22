@@ -94,6 +94,8 @@ end getCurrentTrackName
 	<string>selection</string>
 	<key>inputFormat</key>
 	<string>text</string>
+	<key>keyEquivalent</key>
+	<string>^n</string>
 	<key>name</key>
 	<string>iTunes 下一首</string>
 	<key>outputCaret</key>
@@ -102,6 +104,8 @@ end getCurrentTrackName
 	<string>text</string>
 	<key>outputLocation</key>
 	<string>discard</string>
+	<key>scope</key>
+	<string>text.html.mediawiki</string>
 	<key>tabTrigger</key>
 	<string>next</string>
 	<key>uuid</key>

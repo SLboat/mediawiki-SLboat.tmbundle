@@ -56,7 +56,7 @@ echo implode("\n", $o);
 	<key>keyEquivalent</key>
 	<string>@4</string>
 	<key>name</key>
-	<string>h4</string>
+	<string>四级</string>
 	<key>outputCaret</key>
 	<string>afterOutput</string>
 	<key>outputFormat</key>

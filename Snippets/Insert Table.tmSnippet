@@ -13,7 +13,7 @@
 | ${7:r1 $1} || ${8:r1 $2} || ${9:r1 $3}
 |}</string>
 	<key>name</key>
-	<string>Insert Table</string>
+	<string>插入表格</string>
 	<key>scope</key>
 	<string>text.html.mediawiki</string>
 	<key>tabTrigger</key>

@@ -8,7 +8,7 @@
 	<key>keyEquivalent</key>
 	<string></string>
 	<key>name</key>
-	<string>Ordered List Item</string>
+	<string>有序列表项目</string>
 	<key>scope</key>
 	<string>markup.list.numbered.mediawiki</string>
 	<key>tabTrigger</key>

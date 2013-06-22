@@ -16,7 +16,7 @@ left|right|center
 baseline|sub|super|top|text-top|middle|bottom|text-bottom
 link={target}</string>
 	<key>name</key>
-	<string>Image options</string>
+	<string>图片选型</string>
 	<key>scope</key>
 	<string>text.html.mediawiki</string>
 	<key>tabTrigger</key>

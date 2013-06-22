@@ -113,6 +113,8 @@ end RattingTrack</string>
 	<string>text</string>
 	<key>outputLocation</key>
 	<string>afterInput</string>
+	<key>scope</key>
+	<string>text.html.mediawiki</string>
 	<key>tabTrigger</key>
 	<string>music</string>
 	<key>uuid</key>

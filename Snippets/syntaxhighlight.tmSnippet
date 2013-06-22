@@ -9,7 +9,7 @@
 &lt;/syntaxhighlight&gt;
 </string>
 	<key>name</key>
-	<string>syntaxhighlight</string>
+	<string>语法高亮</string>
 	<key>scope</key>
 	<string>text.html.mediawiki</string>
 	<key>tabTrigger</key>

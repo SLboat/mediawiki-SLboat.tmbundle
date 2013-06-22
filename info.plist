@@ -35,7 +35,7 @@
 					<string>97042E83-482A-41E0-8044-B8B23457A0BB</string>
 				</array>
 				<key>name</key>
-				<string>Format</string>
+				<string>格式化</string>
 			</dict>
 			<key>25A5AD36-CEF3-4BCA-9ACB-4E69F8474F45</key>
 			<dict>
@@ -48,7 +48,7 @@
 					<string>F02C60C7-9978-4FBB-B53D-AE872A05A765</string>
 				</array>
 				<key>name</key>
-				<string>Tables</string>
+				<string>表格</string>
 			</dict>
 			<key>3EF0C7C8-28A7-4920-B32D-A558CF6CB66E</key>
 			<dict>
@@ -80,7 +80,7 @@
 					<string>82818008-054C-451E-85F1-DD433AE697F0</string>
 				</array>
 				<key>name</key>
-				<string>References</string>
+				<string>参考</string>
 			</dict>
 			<key>ACE12738-B468-4090-BB0E-5725D37562FC</key>
 			<dict>
@@ -91,7 +91,7 @@
 					<string>0BDA6124-1DAE-49FA-875A-ED5DEC6639D2</string>
 				</array>
 				<key>name</key>
-				<string>Lists</string>
+				<string>列表</string>
 			</dict>
 			<key>BC429D06-7D1B-4C92-B0D2-AAF922E3868C</key>
 			<dict>
@@ -115,7 +115,7 @@
 					<string>9A70379A-6602-4FA1-BF92-6E8379CC5B91</string>
 				</array>
 				<key>name</key>
-				<string>Links</string>
+				<string>连接</string>
 			</dict>
 			<key>F8E691BD-3B5E-40C9-B306-E5907633EB29</key>
 			<dict>
@@ -128,7 +128,7 @@
 					<string>184223B3-EBEF-4172-B7A8-EA53FEDE2996</string>
 				</array>
 				<key>name</key>
-				<string>Headings</string>
+				<string>标题</string>
 			</dict>
 		</dict>
 	</dict>

@@ -31,6 +31,8 @@ cp "$LastFile" ~/Desktop/For\ Boat/</string>
 	<string>none</string>
 	<key>inputFormat</key>
 	<string>text</string>
+	<key>isDisabled</key>
+	<false/>
 	<key>keyEquivalent</key>
 	<string>^e</string>
 	<key>name</key>
@@ -41,6 +43,8 @@ cp "$LastFile" ~/Desktop/For\ Boat/</string>
 	<string>text</string>
 	<key>outputLocation</key>
 	<string>afterInput</string>
+	<key>scope</key>
+	<string>text.html.mediawiki</string>
 	<key>tabTrigger</key>
 	<string>png</string>
 	<key>uuid</key>
