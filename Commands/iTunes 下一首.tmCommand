@@ -6,31 +6,34 @@
 	<string>nop</string>
 	<key>command</key>
 	<string>#! /usr/bin/osascript
- 
+
 -- todo:输出一个注释，已经转移到了？
 
 -- 森亮号音频见识制造 - iTunes 强制到达下一首
 
--- 记下最后的重复模式
-set last_Repeat to getRepeatType()
+-- 记下最后的重复模式，这个读取花费大量的效率呢
+-- set last_Repeat to getRepeatType()
 
 -- 强制关闭重复模式-关闭
 setRepeatType("关闭")
 
 -- 等待一会
-delay (0.5)
+delay (0.1)
 
 -- 进入下一首，这时候看起来可以了
 nextSong()
 
 -- 稍等一会
-delay (0.5)
+delay (0.1)
 
 -- 强制恢复到单曲
 setRepeatType("单曲")
 
 -- 还原到最后一次的重复模式-恢复
 -- setRepeatType(last_Repeat)
+
+-- 提示工作完成了
+return ("已跳到下一个音频见识：" &amp; getCurrentTrackName())
 
 -- 支持库这是：
 (* 来自伟大的regulus6633,http://stackoverflow.com/questions/14674517/how-to-set-itunes-11-in-shuffle-or-repeat-mode-via-applescript
@@ -62,6 +65,7 @@ on setRepeatType(repeatType) -- 重复模式是一个字符串: 关闭/全部/�
 	ignoring case
 		if currentValue is not repeatType then
 			tell application "System Events" to tell process "iTunes"'s menu bar 1's menu bar item "控制"'s menu 1's menu item "重复"'s menu 1
+				log "get the message from system events"
 				if repeatType is "全部" then
 					perform action "AXPress" of menu item "全部"
 				else if repeatType is "单曲" then
@@ -69,6 +73,7 @@ on setRepeatType(repeatType) -- 重复模式是一个字符串: 关闭/全部/�
 				else
 					perform action "AXPress" of menu item "关闭"
 				end if
+				log "done work with menus of itunes now"
 			end tell
 		end if
 	end ignoring
@@ -84,12 +89,13 @@ end nextSong
 -- 获得当前曲目的名称
 on getCurrentTrackName()
 	tell application "iTunes"
-		log "当前的音频见识是：" &amp; (the name of current track)
+		try
+			return (the name of current track) &amp; ".MP3"
+		on error
+			return "看起来没有跳转成功"
+		end try
 	end tell
-end getCurrentTrackName
-
-
-</string>
+end getCurrentTrackName</string>
 	<key>input</key>
 	<string>selection</string>
 	<key>inputFormat</key>
@@ -103,7 +109,7 @@ end getCurrentTrackName
 	<key>outputFormat</key>
 	<string>text</string>
 	<key>outputLocation</key>
-	<string>discard</string>
+	<string>toolTip</string>
 	<key>scope</key>
 	<string>text.html.mediawiki</string>
 	<key>tabTrigger</key>
