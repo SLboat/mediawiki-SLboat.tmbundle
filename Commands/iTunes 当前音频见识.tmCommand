@@ -106,7 +106,7 @@ end RattingTrack</string>
 	<key>keyEquivalent</key>
 	<string>^m</string>
 	<key>name</key>
-	<string>iTunes当前音频见识</string>
+	<string>iTunes 当前音频见识</string>
 	<key>outputCaret</key>
 	<string>afterOutput</string>
 	<key>outputFormat</key>
