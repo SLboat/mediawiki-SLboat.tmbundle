@@ -3,10 +3,10 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>&lt;!-- http://www.mediawiki.org/wiki/Extension:SyntaxHighlight_GeSHi --&gt;
-&lt;syntaxhighlight lang="${1|rsplus,php|}"${2: line="${3|GESHI_NORMAL_LINE_NUMBERS,GESHI_FANCY_LINE_NUMBERS|}" line start="${4:1}" highlight="${5:1}" enclose="${6|pre,div,none|}"}&gt;
+	<string>&lt;!-- 这里试着用一点点新的code语法 --&gt;
+&lt;code lang="${1|lua,javascript,php|}"${2: line="${3|GESHI_NORMAL_LINE_NUMBERS,GESHI_FANCY_LINE_NUMBERS|}" line start="${4:1}" highlight="${5:1}" enclose="${6|pre,div,none|}"}&gt;
 
-&lt;/syntaxhighlight&gt;
+&lt;/code&gt;
 </string>
 	<key>name</key>
 	<string>语法高亮</string>

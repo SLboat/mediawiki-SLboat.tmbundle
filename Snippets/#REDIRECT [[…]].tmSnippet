@@ -3,13 +3,13 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>#REDIRECT [[${1:Main Page}]]</string>
+	<string>#REDIRECT [[${1:首页}]]</string>
 	<key>name</key>
 	<string>重定向</string>
 	<key>scope</key>
 	<string>text.html.mediawiki</string>
 	<key>tabTrigger</key>
-	<string>redirect</string>
+	<string>重定向</string>
 	<key>uuid</key>
 	<string>9A70379A-6602-4FA1-BF92-6E8379CC5B91</string>
 </dict>

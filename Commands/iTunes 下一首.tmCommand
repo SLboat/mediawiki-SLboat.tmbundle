@@ -82,7 +82,7 @@ on waitfor_setRepeatType(repeatType)
 	-- 强制关闭重复模式-repeatType
 	repeat until (getRepeatType() = repeatType)
 		setRepeatType(repeatType)
-		delay (0.2)
+		--delay (0.1)
 		--评测时间
 		set endTime to (get current date)
 		set duration to endTime - startTime

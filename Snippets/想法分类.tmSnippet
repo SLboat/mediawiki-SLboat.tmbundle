@@ -3,14 +3,12 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>[[File:${1:TM_SELECTED_TEXT:filename.extension}${2:|${3:width}px}${4:|caption}]]</string>
+	<string>[[分类:${1|想法,奇怪的想法|}]]</string>
 	<key>name</key>
-	<string>图片</string>
-	<key>scope</key>
-	<string>text.html.mediawiki</string>
+	<string>想法分类</string>
 	<key>tabTrigger</key>
-	<string>图片</string>
+	<string>想法</string>
 	<key>uuid</key>
-	<string>C1BCD487-9A96-48FB-BA13-508A34A02094</string>
+	<string>FDB414E8-DD9B-441B-BA21-3C0E6DB7C014</string>
 </dict>
 </plist>
