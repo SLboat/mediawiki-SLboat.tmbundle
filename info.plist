@@ -10,7 +10,8 @@
 	<string>&lt;a href="http://www.mediawiki.org/wiki/MediaWiki"&gt;MediaWiki&lt;/a&gt; (inc. Wikipedia) support for TextMate.
 
 ==todo==
-* 加入批量行缩进，就像wiki编辑器</string>
+* 加入批量行缩进，就像wiki编辑器
+* 改写分类使用整行的输入替换？</string>
 	<key>mainMenu</key>
 	<dict>
 		<key>items</key>
@@ -37,6 +38,7 @@
 					<string>1F45179D-C2A1-4239-B378-003FF99D7526</string>
 					<string>CD2330E1-14A4-428D-9106-F3C114920E22</string>
 					<string>97042E83-482A-41E0-8044-B8B23457A0BB</string>
+					<string>DBEA4136-13B4-47BC-96DE-527BCDF02089</string>
 				</array>
 				<key>name</key>
 				<string>格式化</string>
@@ -103,7 +105,7 @@
 					<string>BB36CDF4-4D40-449A-B1DA-7813798DA3B8</string>
 					<string>6BFE350B-6616-48A1-96DE-7986D7779E11</string>
 					<string>0BDA6124-1DAE-49FA-875A-ED5DEC6639D2</string>
-					<string>FDB414E8-DD9B-441B-BA21-3C0E6DB7C014</string>
+					<string>A8E48A72-123D-4215-AA69-8B179CB35D7A</string>
 				</array>
 				<key>name</key>
 				<string>列表</string>
@@ -130,7 +132,7 @@
 					<string>9A70379A-6602-4FA1-BF92-6E8379CC5B91</string>
 				</array>
 				<key>name</key>
-				<string>连接</string>
+				<string>链接</string>
 			</dict>
 			<key>F8E691BD-3B5E-40C9-B306-E5907633EB29</key>
 			<dict>
