@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>#REDIRECT [[${1:首页}]]</string>
+	<string>#重定向 [[${1:首页}]]</string>
 	<key>name</key>
 	<string>重定向</string>
 	<key>scope</key>

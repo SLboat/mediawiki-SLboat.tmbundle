@@ -8,6 +8,7 @@
 	<string>#! /usr/bin/osascript
 
 -- todo: 采用shell的方式来改写一部分内容，不需要声音，不需要反馈文件信息
+-- todo: 和获得itunes一致，考虑移除掉重复的内容到一个模块去
 
 -- 森亮号 iTunes音频见识吸取苹果脚本-全局脚本版本
 -- 这里相比itunes版本多了些玩意，多了自动输出剪贴板内容
@@ -74,7 +75,8 @@ end tell
 --CopyTo(theTrackFile)
 
 --在TextMate里只需要返回即可
-return theTrackFile &amp; "$0"
+set theTrackFile to "==音频见识==\n" &amp; theTrackFile &amp; "$0\n\n[[分类:想法]]"
+return theTrackFile
 
 on CopyTo(TrackFile)
 	-- 这里开始送到剪贴板里去
@@ -98,27 +100,24 @@ on RattingTrack(Rat)
 			set the rating of current track to Rat
 		end if
 	end tell
-end RattingTrack</string>
+end RattingTrack
+</string>
 	<key>input</key>
 	<string>selection</string>
 	<key>inputFormat</key>
 	<string>text</string>
-	<key>keyEquivalent</key>
-	<string>^m</string>
 	<key>name</key>
-	<string>iTunes 当前音频见识</string>
+	<string>音频见识想法</string>
 	<key>outputCaret</key>
 	<string>afterOutput</string>
 	<key>outputFormat</key>
 	<string>snippet</string>
 	<key>outputLocation</key>
 	<string>afterInput</string>
-	<key>scope</key>
-	<string>text.html.mediawiki</string>
 	<key>tabTrigger</key>
-	<string>music</string>
+	<string>音频见识</string>
 	<key>uuid</key>
-	<string>362630A0-BCC9-459B-A9FB-D40933A457F8</string>
+	<string>5E54E927-BE8C-4259-B364-E74123AC6453</string>
 	<key>version</key>
 	<integer>2</integer>
 </dict>

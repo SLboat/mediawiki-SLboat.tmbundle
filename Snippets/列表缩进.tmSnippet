@@ -3,12 +3,15 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>[[分类:${1|想法,奇怪的想法|}]]</string>
+	<string>
+*: </string>
+	<key>keyEquivalent</key>
+	<string>$</string>
 	<key>name</key>
-	<string>[[分类:想法]]</string>
-	<key>tabTrigger</key>
-	<string>想法</string>
+	<string>无序列表缩进</string>
+	<key>scope</key>
+	<string>markup.list.unnumbered.mediawiki</string>
 	<key>uuid</key>
-	<string>FDB414E8-DD9B-441B-BA21-3C0E6DB7C014</string>
+	<string>A8E48A72-123D-4215-AA69-8B179CB35D7A</string>
 </dict>
 </plist>
