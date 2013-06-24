@@ -5,7 +5,7 @@
 	<key>content</key>
 	<string>[[分类:${1|想法,奇怪的想法|}]]</string>
 	<key>name</key>
-	<string>[[分类:想法]]</string>
+	<string>分类:想法</string>
 	<key>tabTrigger</key>
 	<string>想法</string>
 	<key>uuid</key>
