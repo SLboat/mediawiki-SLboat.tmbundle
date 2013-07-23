@@ -75,7 +75,7 @@ end tell
 --CopyTo(theTrackFile)
 
 --在TextMate里只需要返回即可
-set theTrackFile to "==音频见识==\n" &amp; theTrackFile &amp; "$0\n\n[[分类:想法]]"
+set theTrackFile to "==音频想法==\n" &amp; theTrackFile &amp; "$0\n\n[[分类:想法]]"
 return theTrackFile
 
 on CopyTo(TrackFile)
@@ -106,14 +106,16 @@ end RattingTrack
 	<string>selection</string>
 	<key>inputFormat</key>
 	<string>text</string>
+	<key>keyEquivalent</key>
+	<string>~@m</string>
 	<key>name</key>
 	<string>音频见识</string>
 	<key>outputCaret</key>
-	<string>afterOutput</string>
+	<string>heuristic</string>
 	<key>outputFormat</key>
 	<string>snippet</string>
 	<key>outputLocation</key>
-	<string>afterInput</string>
+	<string>atCaret</string>
 	<key>scope</key>
 	<string>text.html.mediawiki</string>
 	<key>tabTrigger</key>

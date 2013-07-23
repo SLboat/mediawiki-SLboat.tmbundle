@@ -108,11 +108,11 @@ end RattingTrack</string>
 	<key>name</key>
 	<string>iTunes 当前音频见识</string>
 	<key>outputCaret</key>
-	<string>afterOutput</string>
+	<string>heuristic</string>
 	<key>outputFormat</key>
 	<string>snippet</string>
 	<key>outputLocation</key>
-	<string>afterInput</string>
+	<string>atCaret</string>
 	<key>scope</key>
 	<string>text.html.mediawiki</string>
 	<key>tabTrigger</key>

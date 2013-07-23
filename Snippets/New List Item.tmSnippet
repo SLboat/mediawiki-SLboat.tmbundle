@@ -6,7 +6,7 @@
 	<string>
 ${TM_CURRENT_LINE/^([:;#* ]*).*/$1/}</string>
 	<key>keyEquivalent</key>
-	<string>$</string>
+	<string>~@</string>
 	<key>name</key>
 	<string>新列表项目</string>
 	<key>scope</key>

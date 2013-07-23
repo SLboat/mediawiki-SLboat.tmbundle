@@ -6,7 +6,7 @@
 	<string>
 # </string>
 	<key>keyEquivalent</key>
-	<string></string>
+	<string>~</string>
 	<key>name</key>
 	<string>有序列表项目</string>
 	<key>scope</key>
