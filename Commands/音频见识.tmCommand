@@ -114,6 +114,8 @@ end RattingTrack
 	<string>snippet</string>
 	<key>outputLocation</key>
 	<string>afterInput</string>
+	<key>scope</key>
+	<string>text.html.mediawiki</string>
 	<key>tabTrigger</key>
 	<string>音频见识</string>
 	<key>uuid</key>

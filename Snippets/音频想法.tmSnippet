@@ -3,14 +3,15 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>[[分类:${1|想法,奇怪的想法|}]]</string>
+	<string>==音频想法==
+</string>
 	<key>name</key>
-	<string>[[分类:想法]]</string>
+	<string>==音频想法==</string>
 	<key>scope</key>
 	<string>text.html.mediawiki</string>
 	<key>tabTrigger</key>
-	<string>想法</string>
+	<string>音频想法</string>
 	<key>uuid</key>
-	<string>FDB414E8-DD9B-441B-BA21-3C0E6DB7C014</string>
+	<string>0CB1F639-8BBE-4B80-9F5D-C5BCC621ADB7</string>
 </dict>
 </plist>
