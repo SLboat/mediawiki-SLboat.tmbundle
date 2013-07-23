@@ -24,9 +24,9 @@ cd $TM_DIRECTORY;
 	<key>outputCaret</key>
 	<string>afterOutput</string>
 	<key>outputFormat</key>
-	<string>html</string>
+	<string>text</string>
 	<key>outputLocation</key>
-	<string>newWindow</string>
+	<string>toolTip</string>
 	<key>scope</key>
 	<string>text.html.mediawiki</string>
 	<key>uuid</key>
