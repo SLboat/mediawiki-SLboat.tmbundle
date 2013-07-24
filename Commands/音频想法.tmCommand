@@ -15,7 +15,7 @@
 -- 当前为了fastScripts而生！
 -- 早期主要为了spark而生！伟大的spark
 
-Set the_start_title to "==音频见识=="
+Set the_start_title to "==音频想法=="
 
 -- 告诉程序iTunes咯
 tell application "iTunes"
@@ -108,10 +108,8 @@ end RattingTrack
 	<string>selection</string>
 	<key>inputFormat</key>
 	<string>text</string>
-	<key>keyEquivalent</key>
-	<string>@M</string>
 	<key>name</key>
-	<string>音频见识</string>
+	<string>音频想法</string>
 	<key>outputCaret</key>
 	<string>heuristic</string>
 	<key>outputFormat</key>
@@ -121,9 +119,9 @@ end RattingTrack
 	<key>scope</key>
 	<string>text.html.mediawiki</string>
 	<key>tabTrigger</key>
-	<string>音频见识</string>
+	<string>音频想法</string>
 	<key>uuid</key>
-	<string>5E54E927-BE8C-4259-B364-E74123AC6453</string>
+	<string>0ECBC863-FB71-43DE-B795-08522227CBDB</string>
 	<key>version</key>
 	<integer>2</integer>
 </dict>

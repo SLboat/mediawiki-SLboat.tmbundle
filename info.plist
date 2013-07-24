@@ -10,6 +10,8 @@
 	<string>&lt;a href="http://www.mediawiki.org/wiki/MediaWiki"&gt;MediaWiki&lt;/a&gt; (inc. Wikipedia) support for TextMate.
 
 ==todo==
+* 可以批量的缩进
+* 可以转换一个部分的字符串为连接
 * 加入批量行缩进，就像wiki编辑器
 * 改写分类使用整行的输入替换？</string>
 	<key>mainMenu</key>
@@ -61,6 +63,7 @@
 				<key>items</key>
 				<array>
 					<string>5E54E927-BE8C-4259-B364-E74123AC6453</string>
+					<string>0ECBC863-FB71-43DE-B795-08522227CBDB</string>
 					<string>FDB414E8-DD9B-441B-BA21-3C0E6DB7C014</string>
 					<string>0CB1F639-8BBE-4B80-9F5D-C5BCC621ADB7</string>
 					<string>------------------------------------</string>
