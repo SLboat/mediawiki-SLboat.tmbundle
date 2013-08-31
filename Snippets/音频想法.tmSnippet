@@ -10,7 +10,7 @@
 	<key>scope</key>
 	<string>text.html.mediawiki</string>
 	<key>tabTrigger</key>
-	<string>音频想法</string>
+	<string>音频的想法</string>
 	<key>uuid</key>
 	<string>0CB1F639-8BBE-4B80-9F5D-C5BCC621ADB7</string>
 </dict>
