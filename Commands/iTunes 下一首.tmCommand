@@ -132,7 +132,7 @@ end getCurrentTrackName</string>
 	<key>inputFormat</key>
 	<string>text</string>
 	<key>keyEquivalent</key>
-	<string>^n</string>
+	<string>~n</string>
 	<key>name</key>
 	<string>iTunes 下一首</string>
 	<key>outputCaret</key>

@@ -119,6 +119,8 @@ end RattingTrack
 	<string>text</string>
 	<key>outputLocation</key>
 	<string>newWindow</string>
+	<key>scope</key>
+	<string>text.html.mediawiki</string>
 	<key>tabTrigger</key>
 	<string>新音频想法</string>
 	<key>uuid</key>
