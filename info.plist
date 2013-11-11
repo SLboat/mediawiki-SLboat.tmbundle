@@ -64,10 +64,16 @@
 				<array>
 					<string>5E54E927-BE8C-4259-B364-E74123AC6453</string>
 					<string>0ECBC863-FB71-43DE-B795-08522227CBDB</string>
+					<string>887CEF0C-6CA0-4634-A83B-B1D14188654F</string>
 					<string>FDB414E8-DD9B-441B-BA21-3C0E6DB7C014</string>
 					<string>0CB1F639-8BBE-4B80-9F5D-C5BCC621ADB7</string>
 					<string>------------------------------------</string>
 					<string>362630A0-BCC9-459B-A9FB-D40933A457F8</string>
+					<!-- 快退 -->
+					<string>6616ABF5-E8E4-4237-8128-92EF11601761</string>
+					<!-- 暂停 -->
+					<string>8A9108AD-56E1-4A11-A83B-BC669D8C2143</string>
+					<!-- 下一首 -->
 					<string>3964D9FD-89DE-4058-985B-EB5EC86C7660</string>
 				</array>
 				<key>name</key>

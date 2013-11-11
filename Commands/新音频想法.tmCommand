@@ -112,7 +112,7 @@ end RattingTrack
 	<key>inputFormat</key>
 	<string>text</string>
 	<key>name</key>
-	<string>新音频想法</string>
+	<string>音频想法→新窗口</string>
 	<key>outputCaret</key>
 	<string>heuristic</string>
 	<key>outputFormat</key>

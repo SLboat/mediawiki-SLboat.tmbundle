@@ -19,9 +19,9 @@ end tell</string>
 	<key>inputFormat</key>
 	<string>text</string>
 	<key>keyEquivalent</key>
-	<string>/</string>
+	<string>\</string>
 	<key>name</key>
-	<string>音频播放暂停</string>
+	<string>iTunes 切换暂停</string>
 	<key>outputCaret</key>
 	<string>afterOutput</string>
 	<key>outputFormat</key>

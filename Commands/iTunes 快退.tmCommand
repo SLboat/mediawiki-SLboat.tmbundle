@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#! /usr/bin/osascript
+
+-- applescript控制iTunes自动快退 
+-- 原始代码来源:http://hints.macworld.com/article.php?story=200507192227372
+
+set THETIMER to 10 -- 每次等待的时间是几秒
+
+--只是倒退
+fast_back(THETIMER)
+
+
+-- 函数部分 --
+-- 快速后退
+on fast_back(gobacktime)
+	tell application "iTunes"
+		if player state is playing or player state is paused then -- 如果需要播放的时候才后退...
+			-- 获得当前的播放时间进度
+			set currTime to get player position
+			-- 如果当前播放的秒数还没有足够后退的描述
+			if currTime &lt; gobacktime then
+				-- 返回到起点好了
+				set currSkip to 0
+			else
+				-- 如果时间足够,那么就只减少十秒就罢了
+				set currSkip to currTime - gobacktime
+			end if
+			
+			-- 跳跃到新的播放位置
+			set player position to currSkip
+		else
+			log "未播放或暂停,不工作"
+		end if
+		
+	end tell
+end fast_back
+
+-- 快速前进
+on fast_go(gobacktime)
+	tell application "iTunes"
+		if player state is playing then
+			-- length of current track:
+			set trackTime to duration of current track
+			--get the current position time:
+			set currTime to get player position
+			--to set new position to gobacktime seconds ahead:
+			set currSkip to currTime + gobacktime
+			
+			-- checks if new position is greater than 
+			-- length of track, and corrects it if it is:
+			if currSkip &gt; trackTime then
+				set currSkip to trackTime
+			end if
+			
+			set player position to currSkip --skip to new position
+		end if
+	end tell
+end fast_go</string>
+	<key>input</key>
+	<string>none</string>
+	<key>inputFormat</key>
+	<string>text</string>
+	<key>keyEquivalent</key>
+	<string>^\</string>
+	<key>name</key>
+	<string>iTunes 快退</string>
+	<key>outputCaret</key>
+	<string>afterOutput</string>
+	<key>outputFormat</key>
+	<string>text</string>
+	<key>outputLocation</key>
+	<string>discard</string>
+	<key>scope</key>
+	<string>text.html.mediawiki</string>
+	<key>uuid</key>
+	<string>6616ABF5-E8E4-4237-8128-92EF11601761</string>
+	<key>version</key>
+	<integer>2</integer>
+</dict>
+</plist>
