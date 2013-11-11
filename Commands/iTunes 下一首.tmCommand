@@ -29,7 +29,7 @@ end if
 play()
 
 -- 提示工作完成了
-return ("已跳到下一个音频见识：" &amp; getCurrentTrackName())
+return ("已跳到下个音频见识：" &amp; getCurrentTrackName())
 
 -- 支持库这是：
 (* 来自伟大的regulus6633,http://stackoverflow.com/questions/14674517/how-to-set-itunes-11-in-shuffle-or-repeat-mode-via-applescript

@@ -7,8 +7,13 @@
 	<key>command</key>
 	<string>#! /usr/bin/osascript
 
--- applescript控制iTunes自动快退 
+-- AppleScript控制iTunes自动快退 
 -- 原始代码来源:http://hints.macworld.com/article.php?story=200507192227372
+
+--神奇!它工作!并且非常不错!
+
+--TODO: 如果开头的时候跳到后面去?或许可以用Cmd+\来控制?但是那样就分开脚本了..
+--TODO:或许检测按下去的频率?给出一个提示?
 
 -- 设置值: 每次等待的时间是几秒
 set THETIMER to 6
@@ -36,11 +41,17 @@ on fast_back(gobacktime)
 			set player position to currSkip
 			
 			-- 如果是暂停的话,那就继续播放
+			-- todo: 提醒到了开头?
 			if player state is not playing then
 				play
+				return ("后退" &amp; gobacktime &amp; "秒,播放&gt;&gt;")
+				
+			else
+				return ("已后退" &amp; gobacktime &amp; "秒")
+				
 			end if
 		else
-			log "未播放或暂停,不工作"
+			return ("未播放或暂停,不工作")
 		end if
 		
 	end tell
@@ -80,7 +91,7 @@ end fast_go</string>
 	<key>outputFormat</key>
 	<string>text</string>
 	<key>outputLocation</key>
-	<string>discard</string>
+	<string>toolTip</string>
 	<key>scope</key>
 	<string>text.html.mediawiki</string>
 	<key>uuid</key>

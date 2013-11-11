@@ -8,11 +8,12 @@
 	<string>#! /usr/bin/osascript
 -- 播放与暂停在这里
 
--- todo：根据按的时间倒退几秒？
 -- todo：或许可以检测前面的符号来决定？
+-- @done：根据按的时间倒退几秒？--&gt;已经转移到别的脚本了
 
 tell application "iTunes"
 	playpause
+	return ("音频见识切到[" &amp; (get player state) &amp; "]")
 end tell</string>
 	<key>input</key>
 	<string>none</string>
@@ -27,7 +28,7 @@ end tell</string>
 	<key>outputFormat</key>
 	<string>text</string>
 	<key>outputLocation</key>
-	<string>discard</string>
+	<string>toolTip</string>
 	<key>scope</key>
 	<string>text.html.mediawiki</string>
 	<key>uuid</key>
