@@ -10,11 +10,11 @@
 -- applescript控制iTunes自动快退 
 -- 原始代码来源:http://hints.macworld.com/article.php?story=200507192227372
 
-set THETIMER to 10 -- 每次等待的时间是几秒
+-- 设置值: 每次等待的时间是几秒
+set THETIMER to 6
 
 --只是倒退
 fast_back(THETIMER)
-
 
 -- 函数部分 --
 -- 快速后退
@@ -34,6 +34,11 @@ on fast_back(gobacktime)
 			
 			-- 跳跃到新的播放位置
 			set player position to currSkip
+			
+			-- 如果是暂停的话,那就继续播放
+			if player state is not playing then
+				play
+			end if
 		else
 			log "未播放或暂停,不工作"
 		end if
@@ -67,7 +72,7 @@ end fast_go</string>
 	<key>inputFormat</key>
 	<string>text</string>
 	<key>keyEquivalent</key>
-	<string>^\</string>
+	<string>\</string>
 	<key>name</key>
 	<string>iTunes 快退</string>
 	<key>outputCaret</key>
