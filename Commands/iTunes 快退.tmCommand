@@ -9,11 +9,13 @@
 
 -- AppleScript控制iTunes自动快退 
 -- 原始代码来源:http://hints.macworld.com/article.php?story=200507192227372
+-- 航海见识发布页面:http://see.sl088.com/wiki/ITunes_%E5%BF%AB%E9%80%9F%E5%80%92%E9%80%80_%E8%8B%B9%E6%9E%9C%E8%84%9A%E6%9C%AC
 
 --神奇!它工作!并且非常不错!
 
---TODO: 如果开头的时候跳到后面去?或许可以用Cmd+\来控制?但是那样就分开脚本了..
+--TODO: 如果开头的时候跳到后面去?或许可以用Cmd+\来控制?但是那样就分开脚本了..因为是重复的,所以这样看起来很有趣,开头的时间很少..而且你也没办法意识到结尾.
 --TODO:或许检测按下去的频率?给出一个提示?
+--TODO:或许可以暂停后,等待若干秒,还在播放的话,到了时间的话,那就暂停掉,只要一个小过程的重放...而不会溜走...
 
 -- 设置值: 每次等待的时间是几秒
 set THETIMER to 6
@@ -83,7 +85,7 @@ end fast_go</string>
 	<key>inputFormat</key>
 	<string>text</string>
 	<key>keyEquivalent</key>
-	<string>\</string>
+	<string>^\</string>
 	<key>name</key>
 	<string>iTunes 快退</string>
 	<key>outputCaret</key>
