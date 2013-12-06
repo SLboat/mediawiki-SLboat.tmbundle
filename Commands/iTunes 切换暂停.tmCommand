@@ -15,13 +15,14 @@ tell application "iTunes"
 	playpause
 	set the_state to player state
 	if the_state = playing then --很有趣这里似乎是某种常量
-		set the_state to "播放🔊" -- 这是播放
+		set the_state to "🔊" -- 这是播放
 	else if the_state = paused then
-		set the_state to "暂停🔇" 
+		set the_state to "🔇" 
 	else if the_state = stopped then
-		set the_state to "停止了😜" 
+		set the_state to "🚏" 
 	end if
-	return ("音频见识" &amp; the_state &amp; "")
+	return (the_state)
+	--return ("音频见识" &amp; the_state &amp; "")
 end tell</string>
 	<key>input</key>
 	<string>none</string>

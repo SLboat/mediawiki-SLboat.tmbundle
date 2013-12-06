@@ -46,10 +46,10 @@ on fast_back(gobacktime)
 			-- todo: 提醒到了开头?
 			if player state is not playing then
 				play
-				return ("后退" &amp; gobacktime &amp; "秒,播放&gt;&gt;")
+				return ("⬅️" &amp; gobacktime &amp; " 🔊")
 				
 			else
-				return ("已后退" &amp; gobacktime &amp; "秒")
+				return ("⬅️" &amp; gobacktime &amp; "")
 				
 			end if
 		else
