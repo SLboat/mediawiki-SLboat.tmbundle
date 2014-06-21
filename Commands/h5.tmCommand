@@ -54,7 +54,7 @@ echo implode("\n", $o);
 	<key>inputFormat</key>
 	<string>text</string>
 	<key>keyEquivalent</key>
-	<string>@5</string>
+	<string>^5</string>
 	<key>name</key>
 	<string>五级</string>
 	<key>outputCaret</key>

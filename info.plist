@@ -10,6 +10,7 @@
 	<string>&lt;a href="http://www.mediawiki.org/wiki/MediaWiki"&gt;MediaWiki&lt;/a&gt; (inc. Wikipedia) support for TextMate.
 
 ==todo==
+* 下一首在输出....音频想法
 * 用森亮号的快捷键方式,放弃commnad,回到ctrl?
 :但是不排除有些打架的可能.
 * 拖入文件的似乎过滤掉多余的路径

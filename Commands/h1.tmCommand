@@ -52,7 +52,7 @@ echo implode("\n", $o);
 	<key>inputFormat</key>
 	<string>text</string>
 	<key>keyEquivalent</key>
-	<string>@1</string>
+	<string>^1</string>
 	<key>name</key>
 	<string>一级</string>
 	<key>outputCaret</key>
